@@ -61,3 +61,34 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 # NoteActive
+
+## How To Install:
+### 1. Clone the project
+git clone git@github.com:alireza-jahandoost/NoteActive.git
+
+### 2. Copy .env.example as .env and configure database settings
+cp .env.example .env
+
+### 3. Install Composer
+composer install
+
+### 4. Generate Application Key
+php artisan key:generate
+
+### 5. Install package dependencies
+npm install && npm run dev
+
+### 6. Migrate the Database ( it might take a while, you can reduce the number of posts for each user in database/seeders/DatabaseSeeder.php )
+php artisan migrate --seed
+
+now the project installed in you computer. you can use the bellow command to run the project on http://localhost:8000
+
+php artisan serve
+
+#### Email of admin:
+admin@admin.com
+
+#### Password of admin:
+admin
+
+Enjoy ;)
