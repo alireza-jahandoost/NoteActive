@@ -78,7 +78,7 @@ php artisan key:generate
 ### 5. Install package dependencies
 npm install && npm run dev
 
-### 6. Migrate the Database ( it might take a while, you can reduce the number of posts for each user in database/seeders/DatabaseSeeder.php )
+### 6. Migrate the Database ( it might take a while )
 php artisan migrate --seed
 
 now the project installed in you computer. you can use the bellow command to run the project on http://localhost:8000

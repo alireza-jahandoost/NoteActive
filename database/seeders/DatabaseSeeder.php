@@ -20,6 +20,6 @@ class DatabaseSeeder extends Seeder
         $this->call(PermissionSeeder::class);
         $this->call(RoleSeeder::class);
         $this->call(UserSeeder::class); //for creating admin user
-        User::factory()->has(Post::factory()->count(rand(2,6)))->count(587)->create();
+        User::factory()->has(Post::factory()->count(rand(2,6)))->count(60)->create();
     }
 }
