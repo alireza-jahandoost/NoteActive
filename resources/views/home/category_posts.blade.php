@@ -30,7 +30,7 @@
                         @if ($post->post_image)
                             <img height="150" class="card-img-top" src="{{url($post->post_image)}}" alt="image of {{$post->title}}">
                         @else
-                            <img height="150" class="card-img-top" src="{{url('images/no-image.jpg')}}" alt="this post doesnt have any image">
+                            <img height="150" class="card-img-top" src="{{url('default-images/no-image.jpg')}}" alt="this post doesnt have any image">
                         @endif
                     </div>
                     <div class="card-body">
