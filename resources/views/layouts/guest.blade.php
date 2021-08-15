@@ -8,17 +8,24 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+        <link rel="stylesheet" href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" />
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
+        {{$links ?? ""}}
+
         <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
     <body>
-        <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
-        </div>
+
+        <!-- scripts -->
+        <script src="{{asset('vendor/jquery/jquery.min.js')}}" charset="utf-8" defer></script>
+        <script src="{{asset('vendor/bootstrap/js/bootstrap.min.js')}}" charset="utf-8" defer></script>
+        <script src="{{ asset('js/app.js') }}" defer></script>
+
     </body>
 </html>
